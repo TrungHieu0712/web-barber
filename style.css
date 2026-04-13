@@ -6,6 +6,7 @@
 body{
     height: 2200px;
     margin: auto 30px;
+    
 }
 
 .banner img{
@@ -28,6 +29,7 @@ body{
 .menu li{
     color: white;
     margin-top: 10px;
+    font-size: 20px;
     
 }
 li:hover{
@@ -56,7 +58,7 @@ marquee i{
     height: 260px;
  
 }
-p,h3{
+p{
     margin-left: 10px;
     font-size: 18px;
     padding: 10px;
@@ -65,20 +67,47 @@ p,h3{
     color:red;
     margin-right: 5px;
 }
-h3{
+.price h3{
     text-align: center;
+    width: 80%;
+    margin-left: 28px;
+    margin-top: 8px;
+    background: rgb(240, 112, 112);
+    padding: 10px;
+    border-radius: 20px 0 20px 0;
+    color:cornsilk;
+
 }
 .price .combo{
     text-align: center;
+    
+}
+.price{
+    width: 441px;
+    height: 292px;
+    background: white;
+}
+.product h3{
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: rgb(240, 112, 112);
+    padding: 10px;
+    border-radius: 20px;
+    color: cornsilk;
 }
 .product{
-    
-    margin-top: 10px;;
+    margin: 10px 0 0 50px;
     width: 100%;
-    height: 360px;
+    height: 600px;
+    background: white;
+}
+.product h5{
+    margin-left: 20px;
+    color: red;
+    margin: 10px 0 10px 10px;
 }
 .album-pomade img{
-    width: 100%;
+    width:100%;
     height: auto;
     border-radius: 20px;
     
@@ -86,9 +115,16 @@ h3{
 .album-pomade{
     display: flex;
     gap:10px;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    
     
 }
+.card{
+    padding: 10px;
+    background: #9d9090;
+    border-radius: 20px;
+}
+
 footer{
     display: flex;
     justify-content: center;
@@ -106,6 +142,13 @@ footer{
 .right i{
     margin-top: 10px;
 }
+main{
+    display: flex;
+}
+.product h5,
+.price h5{
+    font-size: 18px;
+}
 /* 📱 MOBILE */
 @media (max-width: 768px) {
 
@@ -117,7 +160,7 @@ footer{
   body {
     margin: 0 10px;
     height: auto;
-    background-color: darkgrey;
+    
   }
 
   /* Menu xuống dòng */
@@ -128,7 +171,7 @@ footer{
 
   .menu li {
     width: 50%;
-    text-align: center;
+    text-align: start;
     margin: 5px 0;
     font-size: 10px;
     margin-top: 12px;
@@ -136,7 +179,7 @@ footer{
 
   .menu img {
     width: 100%;
-    height: 40px;
+    height: 35px;
   }
 
   /* PRICE full màn hình */
@@ -145,9 +188,15 @@ footer{
     height: auto;
     margin: 10px 0;
     background: white;
+   
+  }
+
+  .price p{
+    font-size: 12px;
   }
   .price h3{
     font-size: 18px;
+    margin-left: 17px;
   }
 
   /* Chữ nhỏ lại */
@@ -158,20 +207,21 @@ footer{
   .product{
     background: white;
     height:130px;
-    
-    
+    margin: 10px 0 0 20px;
+  
   }
   /* Ảnh sản phẩm xếp dọc */
   .album-pomade {
     /* flex-direction: column; */
     align-items: center;
     display: flex;
-    margin-top: 20px;
+    /* margin-top: 20px; */
    
   }
 
   .album-pomade img {
-    width: 30%;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
   }
 
   /* Footer xếp dọc */
@@ -192,4 +242,18 @@ footer{
   .menu li:active{
     color:black;
   }
+  main{
+    display: flex;
+  }
+  .card{
+    padding: 0px;
+    background-color: #9d9090;
+    border-radius: 0 0 10px 10px;
+  }
+  .price h5,
+  .product h5{
+    font-size: 10px;
+    font-style: italic;
+  }
+
 }
