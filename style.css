@@ -53,7 +53,7 @@ marquee i{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 400%;
-    animation: a 5s linear infinite;
+    animation: a 1s linear infinite;
     font-size:20px;
 }
 @keyframes a {
@@ -169,6 +169,11 @@ main{
 option{
    background: lightgray;
    padding: 20px;
+}
+marquee{
+    
+    margin-left: 20%;
+    
 }
 
 
